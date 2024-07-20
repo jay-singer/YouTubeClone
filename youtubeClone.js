@@ -92,7 +92,7 @@ for (let i = 0; i < length; i++) {
                           </div>
                           
                           <div class="col-md-11 col-lg-11">
-                            <p class="card-text text ">
+                            <p class="card-text text  content">
                              ` +
     youTubeArr[i][2] +
     `

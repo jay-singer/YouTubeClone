@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
-
+  font-family: "roboto", sans-serif;
   color: black;
   ion-icon {
     color: black;
@@ -26,6 +28,18 @@ body {
   gap: 30px;
   justify-content: space-between;
   padding: 12px;
+  a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+  }
 }
 
 .column1 {
@@ -37,6 +51,16 @@ body {
 
   .ion {
     font-size: 30px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 4px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
   }
 }
 .column2 {
@@ -82,25 +106,21 @@ body {
   padding-left: 0 8px 0 100px;
 
   img {
-    width: 40px;
+    width: 30px;
     border-radius: 20px;
     object-fit: cover;
   }
   ion-icon {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
-  p {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+  .notification-icon {
     position: relative;
 
     .notification {
       position: absolute;
       background-color: brown;
       color: white;
-      font-size: 14px;
+      font-size: 13px;
 
       display: flex;
       align-items: center;
@@ -110,10 +130,13 @@ body {
       font-weight: 500;
       width: 19px;
       height: 19px;
-      top: 0px;
-      right: 1px;
+      top: 4px;
+      right: 3px;
     }
   }
+}
+.headerIcon:hover {
+  background-color: rgb(224, 224, 224);
 }
 
 /*--------------------------SIDEBAR SECTION-------------------------------------------------*/
@@ -148,7 +171,7 @@ body {
   justify-content: start;
   align-items: center;
   gap: 13px;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400;
   transition: all 0.3s;
   ion-icon {
@@ -191,13 +214,13 @@ body {
   font-weight: 600;
   display: flex;
   justify-content: start;
-  font-size: 1.2em;
+  font-size: 16px;
   align-items: center;
   ion-icon {
     font-weight: 600;
     display: flex;
     justify-content: start;
-    font-size: 1.2em;
+    font-size: 14px;
     align-items: center;
   }
 }
@@ -215,14 +238,18 @@ body {
   width: 100%;
   display: flex !important;
   overflow-x: hidden;
-  gap: 4px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 10px;
 }
 .intrested {
   white-space: nowrap;
-  padding: 4px 5px !important;
-  font-size: 1em;
+  padding: 1px 10px !important;
+  font-size: 14px;
+  background-color: rgb(232, 232, 232);
   border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
   transition: all 0.2s ease-in-out;
 }
 .intrested:hover {
@@ -244,7 +271,7 @@ body {
 
 .card-foter {
   .image {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
     margin: 0px 0px 3px 0;
     align-items: center;
@@ -256,21 +283,19 @@ body {
       color: white;
       font-weight: 700;
       background: rgb(48, 182, 199);
-      font-size: 20px;
+      font-size: 14px;
     }
   }
   .bottom-foo {
     color: rgba(158, 152, 152, 0.722);
-    font-size: 17px;
+    font-size: 14px;
     font-size: 1;
   }
 }
 
 .footer {
   cursor: pointer;
-
-  font-size: 1.1em;
-  padding-bottom: 30px;
+  padding: 0 4px 40px 4px;
   color: rgb(149, 149, 149);
 }
 @media (max-width: 950px) {
